@@ -251,7 +251,115 @@ public class MobEvents {
 
 			event.getSpawns().withSpawner(EntityClassification.MONSTER,
 					new MobSpawnInfo.Spawners(IEEntityTypes.BLACKSTONE_DWARF.get(), 1, 1, 1));
+			
+			//Mob Spawning in other modded biomes
+			
+		} else if (event.getName().toString().equals("biomesoplenty:crystalline_chasm")) {
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}
+			
+		} else if (event.getName().toString().equals("biomesoplenty:undergrowth")) {
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}
 
+		} else if (event.getName().toString().equals("biomesoplenty:visceral_heap")) {
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}
+			
+		} else if (event.getName().toString().equals("biomesoplenty:withered_abyss,")) {
+			if (MobSpawning.GIANT_DELTAS.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.BASALT_GIANT.get(),
+								MobSpawning.GIANT_DELTAS.getSpawnrate(), 1, 1));
+			}
+			
+		} else if (event.getName().toString().equals("biomesoplenty:withered_abyss,")) {
+			if (MobSpawning.GIANT_DELTAS.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.BASALT_GIANT.get(),
+								MobSpawning.GIANT_DELTAS.getSpawnrate(), 1, 1));
+			}					
+						
+		} else if (event.getName().toString().equals("byg:embur_bog")) {
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}
+			
+		} else if (event.getName().toString().equals("byg:glowstone_gardens")) {
+			if (MobSpawning.SHROOMLOIN_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.SHROOMLOIN.get(),
+								MobSpawning.SHROOMLOIN_CRIMSON.getSpawnrate(), 1, 3));
+			}
+
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}			
+			
+		} else if (event.getName().toString().equals("byg:warped_desert")) {
+
+			//    event.getSpawns().withSpawner(EntityClassification.MONSTER,
+			//            new MobSpawnInfo.Spawners(ModEntityType.CEROBEETLE.get(), 1, 1, 1));
+
+			if (MobSpawning.WARPBEETLE_WARPED.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.WARPBEETLE.get(),
+								MobSpawning.WARPBEETLE_WARPED.getSpawnrate(), 1, 1));
+			}
+			
+		} else if (event.getName().toString().equals("byg:magma_wastes")) {
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+
+		} else if (event.getName().toString().equals("byg:wailing_garth")) {
+			if (MobSpawning.SHROOMLOIN_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.SHROOMLOIN.get(),
+								MobSpawning.SHROOMLOIN_CRIMSON.getSpawnrate(), 1, 3));
+			}
+
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));
+			}							
+				
+		} else if (event.getName().toString().equals("byg:wailing_garth")) {
+			if (MobSpawning.SHROOMLOIN_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.SHROOMLOIN.get(),
+								MobSpawning.SHROOMLOIN_CRIMSON.getSpawnrate(), 1, 3));
+			}
+
+			if (MobSpawning.VOLINE_CRIMSON.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.VOLINE.get(),
+								MobSpawning.VOLINE_CRIMSON.getSpawnrate(), 1, 5));						
+			
+			//    event.getSpawns().withSpawner(EntityClassification.MONSTER,
+			//            new MobSpawnInfo.Spawners(ModEntityType.CEROBEETLE.get(), 1, 1, 1));
+
+			if (MobSpawning.WARPBEETLE_WARPED.isEnabled()) {
+				event.getSpawns().withSpawner(EntityClassification.MONSTER,
+						new MobSpawnInfo.Spawners(IEEntityTypes.WARPBEETLE.get(),
+								MobSpawning.WARPBEETLE_WARPED.getSpawnrate(), 1, 1));
+			}
+				
 			//event.getSpawns().withSpawner(EntityClassification.MONSTER,
 			//        new MobSpawnInfo.Spawners(EntityType.GHAST, 20, 1, 1));
 			// Not spawning for some reason?
